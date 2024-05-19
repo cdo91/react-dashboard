@@ -5,6 +5,9 @@ import { ColorModeContext, useMode } from "./theme";
 import Topbar from "./scenes/global/Topbar";
 import Sidebar from "./scenes/global/Sidebar";
 import Dashboard from "./scenes/dashboard/Dashboard";
+import Team from "./scenes/team/Team";
+import Contacts from "./scenes/contacts/Contacts";
+import Invoices from "./scenes/invoices/Invoices";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -20,6 +23,9 @@ function App() {
             <Topbar setIsSidebar={setIsSidebar} />
             <Routes>
               <Route path="/" element={<Dashboard />} />
+              <Route path="/team" element={<Team />} />
+              <Route path="/contacts" element={<Contacts />} />
+              <Route path="/invoices" element={<Invoices />} />
             </Routes>
           </main>
         </div>
