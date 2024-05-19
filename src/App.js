@@ -10,6 +10,7 @@ import Contacts from "./scenes/contacts/Contacts";
 import Invoices from "./scenes/invoices/Invoices";
 import Bar from "./scenes/bar/Bar";
 import Form from "./scenes/form/Form";
+import Pie from "./scenes/pie/Pie";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -30,6 +31,7 @@ function App() {
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<Form />} />
               <Route path="/bar" element={<Bar />} />
+              <Route path="/pie" element={<Pie />} />
             </Routes>
           </main>
         </div>
