@@ -14,7 +14,7 @@ import Pie from "./scenes/pie/Pie";
 import Line from "./scenes/line/Line";
 import FAQ from "./scenes/faq/FAQ";
 import Geography from "./scenes/geography/Geography";
-import Calendar from "./scenes/calendar/calendar";
+import Calendar from "./scenes/calendar/Calendar";
 
 function App() {
   const [theme, colorMode] = useMode();
